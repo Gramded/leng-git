@@ -10,22 +10,34 @@ details[dir=rtl],div[dir=rtl],form[dir=rtl],h1[dir=rtl],h2[dir=rtl],h3[dir=rtl],
     .we-lockup--in-book-shelf {
         margin-top: 35px
     }
+    .sm-landing-appstore-app-1-head__ratings-category {
+        border-left: 1px solid lightgray; border-right: 1px solid lightgray;
+    }
+    .sm-landing-appstore-app-1-head__ratings-age {
+        border-right: 1px solid lightgray;
+    }
 }
 .comments-block {
     display: flex;
     overflow: scroll;
 }
-#ember153 {
+#ember153,
+#ember155,
+#ember154 {
     min-width: 30%;
 }
 
 @media (max-width: 1024px) {
-    #ember153 {
+    #ember153,
+    #ember155,
+    #ember154 {
         min-width: 45vw;
     }
 }
 @media (max-width: 640px) {
-    #ember153 {
+    #ember153,
+    #ember155,
+    #ember154 {
         min-width: 90vw;
     }
 }
