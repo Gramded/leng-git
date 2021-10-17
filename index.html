@@ -6,6 +6,25 @@
     <meta name="google" content="notranslate">
     <title>My New App</title>
     <link rel="stylesheet" href="./style.css">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1537609756591147');
+        fbq('track', 'PageView');
+        fbq('track', 'onGetAppClick');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=1537609756591147&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
 <div style="display: none;">
@@ -20,42 +39,8 @@
     <img src="resources/44.jpg" alt="" width="10px" height="10px">
 </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122173398-1"></script>
-<script>
-    var product = "TEMPLATE_ID"
-    var label = "nolabel"
+<!-- Facebook Pixel Code -->
 
-    try {
-        var url_string = window.location.href
-        var url = new URL(url_string);
-        label = url.searchParams.get("refId");
-        console.log(label);
-    } catch (e) {}
-
-
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'TEMPLATE_GOOGLE_TARGET_ID');
-
-    gtag('event', product + '_page_load', {
-        event_label: product + "_page_load_" + label
-    });
-
-    var _getAppClickTracked = false;
-    var onGetAppClick = function () {
-        if (_getAppClickTracked) {
-            return false;
-        }
-        _getAppClickTracked = true;
-        gtag('event', product + '_get_app_click', {
-            event_label: product + "_get_app_click_" + label
-        });
-        return false;
-    }
-</script>
 
 <style></style>
 <div id="cmp-26" class="sm-landing-appstore-app-1 l-content-width section section--bordered">
@@ -82,7 +67,7 @@
                     <div class="sm-landing-appstore-app-1-head__operation">
                         <div class="sm-landing-appstore-app-1-head__operation-in" style="display: flex;">
 
-                            <a onclick="return onGetAppClick()" href="https://itunes.apple.com/us/app/wallpapers-one-backgrounds/id1366200338?ls=1&mt=8" class="sm-landing-appstore-app-1-head__button sm-landing-appstore-app-1__app-buy ">
+                            <a onclick="return onGetAppClick()" href="#" class="sm-landing-appstore-app-1-head__button sm-landing-appstore-app-1__app-buy ">
                                 Get
                             </a>
 
@@ -128,7 +113,7 @@
                     <div class="sm-landing-appstore-app-1-head__fixed-operations">
                         <div class="sm-landing-appstore-app-1-head__fixed-operations-purchases">In-App Purchases</div>
 
-                        <a onclick="return onGetAppClick()" href="https://itunes.apple.com/us/app/wallpapers-one-backgrounds/id1366200338?ls=1&mt=8" class="sm-landing-appstore-app-1-head__button sm-landing-appstore-app-1__sticky-buy ">
+                        <a onclick="return onGetAppClick()" href="#" class="sm-landing-appstore-app-1-head__button sm-landing-appstore-app-1__sticky-buy ">
                             Get
                         </a>
 
